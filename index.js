@@ -8,6 +8,7 @@ app.use(cors());
 app.use(express.json());
 
 // Routes
+app.use("/api/admin", require("./routes/admin"));
 app.use("/api/auth", require("./routes/auth"));
 app.use("/api/game", require("./routes/game"));
 app.use("/api/leaderboard", require("./routes/leaderboard"));
